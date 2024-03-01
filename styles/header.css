@@ -49,5 +49,5 @@ header {
 
 #menu.active span:nth-child(3) {
   width: 32px;
-  transform: rotate(-45deg) translate(-7px, 5px);
+  transform: rotate(45deg) translate(-8px, -7px);
 }

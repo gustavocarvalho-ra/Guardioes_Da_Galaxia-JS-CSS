@@ -27,7 +27,7 @@
     <header>
       <img src="./assets/logo.png" alt="Logo Guardiões da Galáxia">
 
-      <button type="button" id="menu">
+      <button type="button" id="menu" onclick="changeMenu()">
         <span></span>
         <span></span>
         <span></span>
@@ -38,8 +38,13 @@
       <h1>Peter Quill</h1>
 
       <div>
-        <button type="button" onclick="navigationMember(-1)" id="button_prev" disabled>voltar</button>
-        <button type="button" onclick="navigationMember(1)" id="button_next">avançar</button>
+        <button type="button" onclick="navigationMember(-1)" id="button_prev" disabled>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6l6 6l1.41-1.41z"/></svg>
+        </button>
+
+        <button type="button" onclick="navigationMember(1)" id="button_next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M9.4 18L8 16.6l4.6-4.6L8 7.4L9.4 6l6 6l-6 6Z"/></svg>
+        </button>
       </div>
     </main>
   </div>
