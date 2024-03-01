@@ -20,19 +20,21 @@ function changeStatusButtons() {
   const next = document.getElementById('button_next')
   const ifLast = activeMember === members.length - 1
   next.disabled = ifLast
-
 }
 
-function navigationMember(direction) {
-  activeMember = activeMember + direction
-
+function changeMember (memberId) {
+  activeMember = memberId
   const member = members[activeMember]
 
   images.style.transform = `translateY(${-100 * activeMember}vh)`
   memberName.classList = member.id
-  changeName(member.name)
   
+  changeName(member.name)
   changeStatusButtons()
+}
+
+function navigationMember(direction) {
+  changeMember(activeMember + direction)
 }
 
 function changeMenu() {
@@ -40,5 +42,5 @@ function changeMenu() {
 }
 
 function setMember(memberId) {
-  console.log(memberId)
+  changeMember(memberId)
 }
