@@ -30,6 +30,7 @@ function navigationMember(direction) {
 
   images.style.transform = `translateY(${-100 * activeMember}vh)`
   memberName.classList = member.id
+  changeName(member.name)
   
   changeStatusButtons()
 }

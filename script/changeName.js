@@ -8,7 +8,7 @@ function randomLetter() {
 
 function changeName(newName) {
   console.log({newName});
-  const name = document.getElementById("member__name");
+  const name = document.getElementById("member_name");
 
   name.innerText = newName
   name.setAttribute('data-value', newName)
