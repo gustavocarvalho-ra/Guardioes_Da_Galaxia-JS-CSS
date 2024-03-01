@@ -38,3 +38,7 @@ function navigationMember(direction) {
 function changeMenu() {
   menu.classList.toggle('active')
 }
+
+function setMember(memberId) {
+  console.log(memberId)
+}
