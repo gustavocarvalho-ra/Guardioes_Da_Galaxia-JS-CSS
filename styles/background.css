@@ -1,10 +1,11 @@
 .background {
   z-index: -1;
-  position: absolute;
+  position: relative;
 }
 
 #images {
-  /* position: absolute; */
+  position: absolute;
+  transition: all .8s;
 }
 
 #images img {
