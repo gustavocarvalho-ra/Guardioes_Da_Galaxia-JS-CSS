@@ -6,3 +6,14 @@ const members = [
   { name: 'Rocket Raccoon', id: 'rocket' },
   { name: 'I am Groot', id: 'groot' },
 ]
+
+let activeMember = 0
+
+
+function navigationMember(direction) {
+  activeMember = activeMember + direction
+  
+  const member = members[activeMember]
+
+  console.log(activeMember, member)
+}

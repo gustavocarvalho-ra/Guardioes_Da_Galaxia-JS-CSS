@@ -1,0 +1,16 @@
+.background {
+  z-index: -1;
+  position: absolute;
+}
+
+#images {
+  /* position: absolute; */
+}
+
+#images img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: top;
+}
